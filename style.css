@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'General Sans Regular','General Sans Medium'; */
+    font-family: 'Albert Sans', sans-serif;
+    box-sizing: border-box;
+}
+/* Boiler Plate */
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#minicircle{
+transition: all cubic-bezier(0.19,1,0.22,1) 0.5s;
+width: 10px;
+height: 10px;
+position: absolute;
+z-index: 99999;
+border-radius: 50%;
+background-color: #fff;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+    /* background-color : red; */
+}
+.bounding .baoundingelement{
+    transform: translateY(100%);
+}
+
+#main{
+    width: 100%;
+    background-color: black;
+}
+
+#hero{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 100vh; /* will change */
+    background-color: black;
+    /* box-sizing: border-box;
+    overflow: hidden; */
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* have issue*/
+    padding: 20px 40px;
+    padding-left: 0px;
+    color: #fff;
+}
+#nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+#heading{
+    margin: 10%;
+}
+#heading h1{
+    opacity: 0.6;
+    line-height: 1;
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#heading #secondHT{
+    margin-left: 140px;
+}
+.blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* background-color: rebeccapurple; */
+    width: fit-content;
+   
+}
+.blocktext h5{
+    /* background-color: rgb(144, 210, 62); */
+    text-align: right;
+    text-transform: uppercase;
+}
+
+
+#smallheading{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 50px;
+    text-transform: uppercase;
+}
+#smallheading h5{
+    text-align: right;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+}
+
+#herofooter{
+    padding: 0 2vw;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;/* change issue*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#herofooter a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+#herofooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+#herofooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+/* second */
+#second{
+    text-transform: uppercase;
+    color: #fff;
+    padding-right: 10vh;
+    padding-top: 200px;
+    background-color: black;
+    width: 100%;/* change issue*/
+    height: 100vh;
+    
+}
+
+.elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #888;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+}
+.elem h1{
+    font-size: 7.5vw;
+    opacity: 0.7;
+}
+
+.elemlast{
+    border-bottom: 1px solid #888 ;
+}
+.elem img{
+    height: 100%;
+    /* display: none; */
+    opacity: 0;
+    z-index: 999;
+    position: absolute;
+}
+
+/*about*/
+#about{
+    /* margin-top: 50px; */
+    width: 100%; /* */
+    background-color: black;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 50px;
+}
+/* 
+#imgebout{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-image: url(./image/cynthia.png);
+    background-size: cover;
+} */
+
+#about img{
+    width: 200px;
+}
+#textabout{
+    width: 25rem;
+    /* background-color: red; */
+}
+#textabout h5{
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#textabout p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+#textabout a{
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*Subscribe*/
+
+#subscribe{
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    padding-bottom: 7vm;
+}
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/*Footer*/
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    background-color: black;
+    color: #fff;
+}
+
+#footer-left{
+    display: flex;
+    gap: 20px;
+}
+#footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+#footer-right{
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+}
